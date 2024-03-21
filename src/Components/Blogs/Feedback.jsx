@@ -109,7 +109,7 @@ function Feedback() {
   return (
     <>
       {/* customer feedback head section */}
-      <div className="grid md:grid-cols-2 gap-2 md:px-20 md:py-0 p-7 mt-7 2xl:w-[1440px] w-auto mx-auto ">
+      <div className="grid md:grid-cols-2 gap-2 md:px-20 md:py-0 p-7 mt-7 2xl:w-[1440px] w-auto mx-auto">
         <div>
           <h1 className="font-bold md:text-xl">Our Customer Feedback</h1>
           <p className="md:text-lg text-[#652D91]">
@@ -189,7 +189,6 @@ function Feedback() {
       </div>
       {/* pagination circle button */}
       <div className="justify-center flex mb-3">
-        {/* previous circle button  */}
         {Array.from(
           { length: Math.ceil(feedbackcustomers.length / itemsPerPage) },
           (_, i) => (
