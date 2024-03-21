@@ -1,13 +1,18 @@
-import React from 'react'
-import './App.css'
-import Blogs from './Pages/Blogs'
-function App() {
+import React from 'react';
+import './App.css';
+import Blogs from './Pages/Blogs';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+function App() {
   return (
     <>
-   <Blogs/>
-   </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Blogs />} />
+      </Routes>
+    </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

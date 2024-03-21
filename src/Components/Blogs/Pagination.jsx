@@ -81,7 +81,7 @@ function Pagination() {
   return (
     <>
       {/* main section of pagination */}
-      <div className="grid md:grid-cols-3 md:grid-rows-2 gap-5 md:px-20 md:py-0 2xl:w-[1440px] w-auto mx-auto px-10 ">
+      <div className="grid md:grid-cols-3 md:grid-rows-2 gap-5 md:px-20 md:py-0 2xl:w-[1440px] w-auto mx-auto px-10">
         {currentItems.map((item, index) => (
           <div key={index}>
             <img
@@ -102,7 +102,7 @@ function Pagination() {
         ))}
       </div>
       {/* pagination icon function*/}
-      <div className="flex justify-center mt-4 gap-3 mb-3 2xl:w-[1440px] w-auto mx-auto ">
+      <div className="flex justify-center mt-9 gap-3 mb-3 2xl:w-[1440px] w-auto mx-auto ">
         {Array.from(
           { length: Math.ceil(paginationitems.length / itemsPerPage) },
           (_, i) => (

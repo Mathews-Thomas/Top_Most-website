@@ -199,7 +199,7 @@ function Feedback() {
               className={`mx-1 p-1 rounded ${
                 currentPage === i + 1
                   ? "bg-[#652D91] text-white"
-                  : "bg-[#652D914D] text-black  border"
+                  : "bg-[#652D914D] text-black"
               }`}
             >
             </button>
