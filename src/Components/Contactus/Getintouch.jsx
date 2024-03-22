@@ -1,9 +1,9 @@
 import React from "react";
-import gmailicon from "../../../assets/gmail.png";
-import oldphoneicon from "../../../assets/old-typical-phone1.png";
-import mapiconblack from "../../../assets/mapiconblack.png";
-import mapiconred from "../../../assets/mapiconred.png";
-import dentalitem1 from "../../../assets/dentalitem1.png";
+import gmailicon from "../../assets/gmail.png";
+import oldphoneicon from "../../assets/old-typical-phone1.png";
+import mapiconblack from "../../assets/mapiconblack.png";
+import mapiconred from "../../assets/mapiconred.png";
+import dentalitem1 from "../../assets/dentalitem1.png";
 import { Rating } from "@material-tailwind/react";
 import { useState } from "react";
 function Getintouch() {
@@ -268,9 +268,9 @@ const acrylicDentalLabItems =[{
       </div>
       {/* pagination dental care items  */}
       <div className="grid md:grid-cols-3 md:grid-rows-1 md:px-14 md:py-0 p-7 gap-7 2xl:w-[1440px] w-auto mx-auto">
-        {/* mapping the feedback customers */}
+        {/* mapping the getin touch items */}
         {currentItems.map((item, index) => (
-          <div key={index}>
+          <div key={index} className="md:py-5">
             <div>
               <img src={item.img} alt="dentalitem" />
             </div>
@@ -288,25 +288,25 @@ const acrylicDentalLabItems =[{
             {/* redmap and address */}
             <div className="flex items-center gap-4 px-3 ">
               <div>
-                <img src={item.mapred} alt="redmap" className="w-9" />
+                <img src={item.mapred} alt="redmap" width={'40px'} />
               </div>
               <div>
                 <p className="text-md font-light">{item.address}</p>
               </div>
             </div>
             {/* phonenumber section */}
-            <div className="flex items-center gap-4 my-3 px-3">
+            <div className="flex items-center gap-4 my-3 px-3 ">
               <div>
-                <img src={item.oldphone} alt="phone" />
+                <img src={item.oldphone} alt="phone"/>
               </div>
               <div>
                 <p className="text-md font-light">{item.phonenumber}</p>
               </div>
             </div>
              {/* gmail section */}
-             <div className="flex items-center gap-4 my-3 px-3 ">
+             <div className="flex items-center gap-4 my-3 px-3 flex-wrap">
               <div>
-                <img src={item.gmailimg} alt="gmail"  />
+                <img src={item.gmailimg} alt="gmail"/>
               </div>
               <div>
                 <a className="text-md font-light hover:underline" href="https://mail.google.com/">{item.email}</a>

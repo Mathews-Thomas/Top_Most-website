@@ -1,6 +1,5 @@
 import React from "react";
-import mapimage from "../../../assets/map.png";
-
+import mapimage from "../../assets/map.png";
 function Herosectionmap() {
   return (
     <>
